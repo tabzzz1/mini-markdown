@@ -246,7 +246,7 @@ class ToolbarConfig extends BaseClass {
     }
   }
 
-  // 重置工具栏顺序
+  // 重置工具栏
   public reset(): void {
     this.toolbars = this.initToolbar();
     this.initToolbarOrderMap();
@@ -289,7 +289,7 @@ class ToolbarConfig extends BaseClass {
   }
 
   // 交换工具栏位置（一对一）
-  public swapToolbarsPosition(firstType: ToolbarType, secondType: ToolbarType): void {
+  public swapToolbarsOrder(firstType: ToolbarType, secondType: ToolbarType): void {
     try {
       this.checkDestroyed();
 

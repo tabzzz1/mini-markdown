@@ -965,7 +965,7 @@ useEffect(() => {
 
 - 参数：`void`
 - 返回值：`void`
-- 说明：恢复到默认工具栏配置。
+- 说明：恢复到默认工具栏配置（包含排序和内容）。
 
 
 ```tsx
@@ -997,7 +997,7 @@ useEffect(() => {
 }, []);
 ```
 
-#### swapToolbarsPosition
+#### swapToolbarsOrder
 
 - 参数：
   - `firstType`: `ToolbarType` - 第一个工具栏类型
@@ -1012,7 +1012,7 @@ useEffect(() => {
 useEffect(() => {
   try {
     // 交换粗体和斜体按钮的位置
-    ToolbarManager.swapToolbarsPosition("bold", "italic");
+    ToolbarManager.swapToolbarsOrder("bold", "italic");
   } catch (error) {
     console.error("交换工具栏位置失败:", error);
   }
